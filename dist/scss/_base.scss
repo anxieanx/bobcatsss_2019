@@ -1,0 +1,76 @@
+// BASE STYLES
+
+html {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-font-color;
+}
+
+body {
+  box-sizing: border-box;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+	margin-left: $layout-margin;
+	margin-right: $layout-margin;
+}
+
+.section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: $gutter * 4;
+
+	&--column {
+		flex-direction: column;
+	}
+
+	&__item {
+		width: 45%;
+	}
+
+	&__item--full {
+		width: 100%;
+	}
+
+	&__subtitle {
+		margin-top: 3rem;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $color-primary;
+  font-family: $heading-font;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5em;
+}
+
+a {
+	color: $color-primary;
+	text-decoration: none;
+	transition: .1s;
+}
+
+p {
+	color: $color-gray;
+	font-family: $base-font;
+}
+
+.coming-soon {
+	font-family: "montserrat";
+	font-size: 4.25rem;
+	text-align: center;
+  margin-top: $gutter * 2;
+  margin-bottom: $gutter * 4;
+}

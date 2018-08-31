@@ -1,0 +1,44 @@
+// COLORS
+
+$color-primary: #009688;
+$color-secondary: #89C147;
+
+$white: #FFFFFF;
+$color-gray--light: #8C8C8C;
+$color-gray: #4C4C4C;
+$color-gray--dark: #2B2B2B;
+$black: #141414;
+
+
+// FONTS
+
+@font-face {
+  font-family: "josefin-light";
+  src: url("../dist/fonts/JosefinSans-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "reenie";
+  src: url("../dist/fonts/ReenieBeanie.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../dist/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+$base-font-size: 16px;
+$base-line-height: 1.7;
+$base-font-color: $color-gray;
+$base-font: "josefin-light", sans-serif;
+$heading-font: "montserrat", sans-serif;
+$display-font: "reenie";
+
+
+// LAYOUT
+
+$layout-margin--sm: 5%;
+$layout-margin: 15%;
+$gutter: 2rem;

@@ -1,0 +1,40 @@
+.about {
+	//margin-top: 4rem;
+}
+
+.main--text {
+	width: 50%;
+}
+
+.coming-soon {
+	font-family: "montserrat";
+	font-size: 68px;
+	text-align: center;
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+}
+
+.main--title {
+	color: #009688;
+	font-family: "montserrat";
+	font-size: 26px;
+	margin-top: 3rem;
+}
+
+.main--subtitle {
+	color: #009688;
+	font-family: "montserrat";
+	font-size: 20px;
+	margin-top: 3rem;
+}
+
+.link {
+	color: #009688;
+	font-family: "josefin-light";
+	text-decoration: none;
+	transition: .1s;
+}
+
+.link:hover {
+	color: lighten(#009688, 5%);
+}
