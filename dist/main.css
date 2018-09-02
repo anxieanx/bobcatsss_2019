@@ -374,10 +374,28 @@ p {
       text-align: center;
       margin-bottom: 0.5rem; }
 
+.organization__item--wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-betaween; }
 .organization__item {
-  text-align: center; }
+  width: 33%;
+  text-align: center;
+  margin-bottom: 2rem; }
+  .organization__item:first-child {
+    width: 100%; }
+  .organization__item:last-child {
+    margin-bottom: 0; }
+  .organization__item span {
+    display: block;
+    color: #8C8C8C;
+    font-size: 14px; }
 .organization__title {
-  width: 100%; }
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem; }
 
 .nav {
   display: flex;
