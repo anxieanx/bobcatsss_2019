@@ -133,6 +133,8 @@ p {
     margin: 0 auto; }
     .footer__icons a {
       display: inline-block; }
+      .footer__icons a:hover {
+        opacity: 0.8; }
     .footer__icons img {
       width: 2rem; }
   .footer h3 {
@@ -232,6 +234,7 @@ p {
     top: -4rem;
     right: -2rem; }
   .countdown__map {
+    width: 100%;
     margin-top: 4rem; }
 
 .countdown__title {
