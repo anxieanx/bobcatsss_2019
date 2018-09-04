@@ -27,7 +27,7 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: $gutter * 4;
+	margin-bottom: 4 * $gutter;
 
 	&--column {
 		flex-direction: column;
@@ -71,6 +71,46 @@ p {
 	font-family: "montserrat";
 	font-size: 4.25rem;
 	text-align: center;
-  margin-top: $gutter * 2;
-  margin-bottom: $gutter * 4;
+  margin-top: 2 * $gutter;
+  margin-bottom: 4 * $gutter;
+}
+
+@media screen and (max-width: 639px) {
+
+	.container {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.section {
+		margin-bottom: 2 * $gutter;
+	}
+
+	.section__item {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 1.75rem;
+	}
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  
+	.container {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.section {
+		margin-bottom: 2 * $gutter;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+
+	.container {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 }

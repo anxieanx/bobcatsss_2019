@@ -159,3 +159,14 @@
 		margin-bottom: $gutter;
 	}
 }
+
+@media screen and (max-width: 639px) {
+
+	.about .about__icon {
+		display: none;
+	}
+
+	.video__title {
+		line-height: 1.3;
+	}
+}
