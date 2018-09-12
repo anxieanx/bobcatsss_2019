@@ -14,9 +14,6 @@
   <link rel="shortcut icon" href="bobcatsss.ico" type="image/x-icon">
   <link rel="stylesheet" href="dist/normalize.css">
   <link rel="stylesheet" href="dist/main.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
-   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-   crossorigin=""/>
 </head>
 
 <body>
@@ -114,23 +111,31 @@
     </ul>
   </nav>
 
-  <main class="container about" role="main">
-    <h1>Venue</h1>
-    <h2>Faculty of Civil Engineering Osijek</h2>
-    <section class="section">
-      <div class="section__item">
-        <img src="dist/img/fce_osijek_1.jpg" class="slider__img" alt="Faculty of Civil Engineering">
-        <img src="dist/img/fce_osijek_2.jpg" class="slider__img" alt="Faculty of Civil Engineering">
-        <img src="dist/img/fce_osijek_3.jpg" class="slider__img" alt="Faculty of Civil Engineering">
-        <img src="dist/img/fce_osijek_4.jpg" class="slider__img" alt="Faculty of Civil Engineering">
-        <img src="dist/img/fce_osijek_5.jpg" class="slider__img" alt="Faculty of Civil Engineering">
-      </div>
-
-      <div class="section__item">
-        <div id="mapid"></div>
-      </div>
-    </section>
+  <main class="container about" role="main" align="center">
+    <h1>Venue - Faculty of Civil Engineering Osijek</h1>
+	<img class="slide" src="slika3.JPG" alt="slika3" style="width:900px;height:600px;" >
+	<img class="slide" src="slika4.JPG" alt="slika4" style="width:900px;height:600px;" >
+	<img class="slide" src="slika5.JPG" alt="slika5" style="width:900px;height:600px;" >
+	
+	<img class="slide" src="slika7.JPG" alt="slika7" style="width:900px;height:600px;" >
+ 
   </main> 
+  <script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slide");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+  </script>
 
 	<footer class="footer">
     <div class="footer__item">
@@ -168,11 +173,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="dist/js/burger_init.js"></script>
-  <script src="dist/js/slider_init.js"></script>
-  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
-   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-   crossorigin=""></script>
-   <script src="dist/js/map_init.js"></script>
 	  
 </body>
 
