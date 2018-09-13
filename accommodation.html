@@ -14,6 +14,9 @@
   <link rel="shortcut icon" href="bobcatsss.ico" type="image/x-icon">
   <link rel="stylesheet" href="dist/normalize.css">
   <link rel="stylesheet" href="dist/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
 </head>
 
 <body>
@@ -121,47 +124,49 @@
         </div>
       </div>
 
-      <div class="section__item">
+      <div class="section__item--full">
         <h2><a href="http://www.hotelosijek.hr/en/">Hotel Osijek ****</a></h2>
-        <p>At the heart of Osijek's pedestrian zone one can find Hotel Osijek, situated next to a quiet river port and promenade, the inevitable motives of the cities postcards. Its offer will bring a touch of luxury into your every journey, whether you are a meticulous business guest or interested in exploring the regions tourist attractions. In addition to accommodation facilities, hotel offers 5 conference rooms for up to 450 people, and is completely equipped for hosting congresses, business meetings and all kinds of events, with a top quality service.The quality of hotel services, preparation and serving food and beverages, in as well as outside of the hotel, is guaranteed by the implementation of HACCP system and the certificate for control system EN ISO 9001:2000.</p>
-        <p>The Hotel is certified as Sustainable Hotel by UPUHH (Association of Employers in Croatian Hospitality) and it satisfies high standards regulated by green criteria.</p>
-        <p>Hotel Osijek has 140 rooms and 7 apartments. According to their quality, all accommodation units are classified as Classic, Superior and Deluxe.</p>
+      </div>
+
+      <div class="section__item">
+        <img src="dist/img/hotel-osijek.jpg" alt="Hotel Osijek" class="section__img" />
+        <p>At the heart of Osijek's pedestrian zone one can find Hotel Osijek, situated next to a quiet river port and promenade, the inevitable motives of the cities postcards. Its offer will bring a touch of luxury into your every journey, whether you are a meticulous business guest or interested in exploring the regions tourist attractions. In addition to accommodation facilities, hotel offers 5 conference rooms for up to 450 people, and is completely equipped for hosting congresses, business meetings and all kinds of events, with a top quality service. Hotel Osijek has 140 rooms and 7 apartments. According to their quality, all accommodation units are classified as Classic, Superior and Deluxe.</p>
+
+        <table class="table">
+          <tr>
+            <td>Bed and breakfast<br/>price per person</td>
+            <td>Classic room<br/><a href="dist/img/classic-room.jpg" target="_blank"><img src="dist/img/classic-room.jpg" alt="Classic room" class="table__img" /></a></td>
+            <td>Superior room<br/><a href="dist/img/superior-room.jpg" target="_blank"><img src="dist/img/superior-room.jpg" alt="Superior room" class="table__img" /></a></td>
+          </tr>
+
+          <tr>
+            <td>1/1</td>
+            <td>78,40 - 79,45 EUR*</td>
+            <td>78,40 - 79,45 EUR*</td>
+          </tr>
+
+          <tr>
+            <td>1/2 room per person</td>
+            <td>46,86 - 47,50 EUR*</td>
+            <td>46,86 - 47,50 EUR*</td>
+          </tr>
+        </table>
+        <div class="table__info">* Please note: As for the euro, you can use some approximate rate of 7,4 or 7,5 kn. But please indicate that the price in euro is then approximate. In case of advance payment from abroad, we will use the euro exchange rate for the current day of the invoice. In  the case of cash or card payments, the rate used is the current rate on the day of departure of the guest.</div>
 
         <h3 class="section__subtitle">How to book a room?</h3>
-        <p>Recommended hotels reservations should be made via email stated below.</p>
-        <p>To book a room, please write to info@hotelosijek.hr or by phone reservation +385(0)31230333. All participants are requested to fill the room reservation form and then  send it to the e-mail address.</p>
+        <p>Recommended hotels reservations should be made via email stated below. To book a room, please write to <a href="mailto:info@hotelosijek.hr">info@hotelosijek.hr</a> or by phone reservation +385(0)31230333. All participants are requested to fill the room reservation form and then  send it to the e-mail address.</p>
         <a href="docs/accommodation_application_form.pdf" class="link" target="_blank">Download Form</a>
-
-        <h3 class="section__subtitle">How To Reach Us</h3>
-        <p>By Car</p>
-        <ul>
-          <li>Motorway Zagreb-Osijek (or Belgrade—Osijek)</li>
-          <li>Podravska Main Road Zagreb - Osijek</li>
-          <li>International Main Road Budapest - Pecs - Beli Manastir - Osijek </li>
-        </ul>
-        <p>By Train</p>
-        <ul>
-          <li>Zagreb-Osijek</li>
-          <li>Budapest-Osijek</li>
-          <li>Belgrade (via Vinkovci)-Osijek</li>
-          <li>Split-Zagreb-Osijek</li>
-        </ul>
-        <p>By Plane (Airport shuttle can be organized)</p>
-        <ul>
-          <li>Airport Osijek at Klisa (20 km from Osijek)</li>
-          <li>Airport Pleso in Zagreb (280 km from Osijek)</li>
-          <li>Airport Nikola Tesla in Belgrade (247 km from Osijek)</li>
-          <li>Airport Ferihegy in Budapest (278 km from Osijek)</li>
-        </ul>
       </div>
 
       <div class="section__item contact__info">
+        <div id="mapid"></div>
+
         <h3>Contact Information</h3>
         <ul>
           <li>Šamačka 4, 31000 Osijek</li>
           <li>Tel.: +385 31 230 333</li>
           <li>Fax: +385 31 230 444</li>
-          <li>info@hotelosijek.hr</li>
+          <li><a href="mailto:info@hotelosijek.hr">info@hotelosijek.hr</a></li>
         </ul>
         <img src="dist/icon/arrow2.png" alt="Participation Arrow Icon" class="accommodation__icon">
       </div>
@@ -204,6 +209,10 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="dist/js/burger_init.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="dist/js/map_init.js"></script>
 	  
 </body>
 

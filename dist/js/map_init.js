@@ -10,25 +10,14 @@ var OpenStreetMap_HOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{
 //  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 //}).addTo(map);
 
-IconStyleOne = L.icon({
-	iconUrl: 'dist/icon/marker-green.png'
-});
-
-IconStyleTwo = L.icon({
-	iconUrl: 'dist/icon/marker-red.png'
-});
-
 L.marker([45.56212, 18.67943]).addTo(map)
   .bindPopup('Conference Hotel<br/>Hotel Osijek')
-  .openPopup()
-  .setIcon(IconStyleTwo);
+  .openPopup();
 
 L.marker([45.55877, 18.68108]).addTo(map)
 	.bindPopup('Faculty of Humanities and Social Sciences')
-	.openPopup()
-	.setIcon(IconStyleTwo);
+	.openPopup();
 
 L.marker([45.55571, 18.70815]).addTo(map)
 	.bindPopup('Conference Venue<br/>Faculty of Civil Engineering')
-	.openPopup()
-	.setIcon(IconStyleOne);
+	.openPopup();
