@@ -136,6 +136,7 @@
 
 	.themes__links {
 		text-align: center;
+		margin-top: 0;
 
 		a {
 			font-weight: 600;
@@ -269,6 +270,21 @@
 
 		.table__img {
 			width: 100px;
+		}
+	}
+
+	.authors {
+
+		.themes__title {
+			margin: $gutter;
+		}
+
+		.themes__links {
+			margin-top: $gutter;
+		}
+
+		.section__item h3:first-child {
+			margin-top: 3rem;
 		}
 	}
 }

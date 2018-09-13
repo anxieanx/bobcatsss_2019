@@ -531,7 +531,8 @@ p {
     text-align: center;
     margin: 4rem; }
   .authors .themes__links {
-    text-align: center; }
+    text-align: center;
+    margin-top: 0; }
     .authors .themes__links a {
       font-weight: 600; }
   .authors ul {
@@ -602,7 +603,14 @@ p {
   .accommodation .table {
     margin-top: 1rem; }
   .accommodation .table__img {
-    width: 100px; } }
+    width: 100px; }
+
+  .authors .themes__title {
+    margin: 2rem; }
+  .authors .themes__links {
+    margin-top: 2rem; }
+  .authors .section__item h3:first-child {
+    margin-top: 3rem; } }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
   #mapid {
     margin-top: 3rem;

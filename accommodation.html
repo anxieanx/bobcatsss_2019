@@ -215,6 +215,13 @@
    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
    crossorigin=""></script>
    <script src="dist/js/map_init.js"></script>
+  <script>
+    L.marker([45.56212, 18.67943]).addTo(map)
+    .bindPopup('Conference Hotel<br/>Hotel Osijek')
+    .openPopup();
+
+    map.setView([45.5625, 18.6915], 14);
+  </script>
 	  
 </body>
 
