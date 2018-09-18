@@ -567,8 +567,10 @@ p {
 .organization__item {
   width: 33%;
   text-align: center;
-  margin-bottom: 2rem; }
-  .organization__item:first-child {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  .organization__item--full {
     width: 100%; }
   .organization__item:last-child {
     margin-bottom: 0; }
@@ -610,7 +612,12 @@ p {
   .authors .themes__links {
     margin-top: 2rem; }
   .authors .section__item h3:first-child {
-    margin-top: 3rem; } }
+    margin-top: 3rem; }
+
+  .organization__item {
+    width: 100%; }
+  .organization__item:last-child {
+    margin-bottom: 2rem; } }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
   #mapid {
     margin-top: 3rem;
@@ -626,7 +633,11 @@ p {
   .accommodation .section__img {
     height: 30rem; }
   .accommodation .accommodation__icon {
-    display: none; } }
+    display: none; }
+
+  .organization__item {
+    padding-left: 1rem;
+    padding-right: 1rem; } }
 .nav {
   display: flex;
   justify-content: space-between;
