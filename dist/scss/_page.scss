@@ -97,7 +97,7 @@
 		}
 	}
 
-	.link {
+	.link--cta {
 		display: block;
 		font-weight: 600;
 		text-align: center;
@@ -112,17 +112,17 @@
 			width: 150px;
 		}
 
-		&__info {
-			font-size: 0.75rem;
-			font-style: italic;
-			margin-top: 0.75rem;
-    	line-height: 1.4;
-		}
-
 		tr:nth-child(2) td {
 			padding-top: 0.5rem;
 			padding-bottom: 0.5rem;
 		}
+	}
+
+	.table__info {
+		font-size: 0.75rem;
+		font-style: italic;
+		margin-top: 0.75rem;
+    line-height: 1.4;
 	}
 }
 

@@ -506,7 +506,7 @@ p {
       padding: 0; }
     .accommodation .contact__info li {
       list-style-type: none; }
-  .accommodation .link {
+  .accommodation .link--cta {
     display: block;
     font-weight: 600;
     text-align: center; }
@@ -516,14 +516,14 @@ p {
     margin-top: 2rem; }
     .accommodation .table__img {
       width: 150px; }
-    .accommodation .table__info {
-      font-size: 0.75rem;
-      font-style: italic;
-      margin-top: 0.75rem;
-      line-height: 1.4; }
     .accommodation .table tr:nth-child(2) td {
       padding-top: 0.5rem;
       padding-bottom: 0.5rem; }
+  .accommodation .table__info {
+    font-size: 0.75rem;
+    font-style: italic;
+    margin-top: 0.75rem;
+    line-height: 1.4; }
 
 .authors {
   margin-top: 4rem; }
