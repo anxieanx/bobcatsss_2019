@@ -1,0 +1,81 @@
+.carousel {
+	position: relative;
+
+	&__item {
+		width: 100%;
+		height: 400px;
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		filter: blur(1px);
+		position: absolute;
+		z-index: -1;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__info:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		//background-color: $color-primary;
+		opacity: 0.4;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+	h2, h3 {
+		width: 100%;
+		background-color: rgba($white, 0.65);
+		margin-bottom: 0;
+	}
+
+	h2 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1.2;
+		padding-top: 1.25rem;
+		padding-bottom: 1rem;
+	}
+
+	h3 {
+		font-size: 1rem;
+		line-height: 1;
+		padding-bottom: 1.5rem;
+	}
+
+	.owl-nav {
+		display: none;
+	}
+
+	.owl-dots {
+		margin-top: 0.75rem;
+	}
+
+	.owl-dot:focus {
+		outline: none;
+	}
+
+	.owl-dots .owl-dot span {
+		background: $color-gray--light!important;
+	}
+
+	.owl-dots .owl-dot.active span {
+		background: $color-gray--dark!important;
+	}
+}
