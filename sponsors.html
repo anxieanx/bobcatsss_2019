@@ -14,6 +14,9 @@
   <link rel="shortcut icon" href="bobcatsss.ico" type="image/x-icon">
   <link rel="stylesheet" href="dist/normalize.css">
   <link rel="stylesheet" href="dist/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
 </head>
 
 <body>
@@ -23,6 +26,8 @@
     </div>
 
     <ul class="dropdown--wrap js-nav--user">
+      <li class="dropdown__item"><div class="dropdown__head"><a href="index.html">Home</a></div></li>
+
       <li class="dropdown__item">
         <div class="dropdown__head">Conference &#8628;</div>
         <div class="dropdown__body">
@@ -111,115 +116,20 @@
     </ul>
   </nav>
 
-  <header class="header">
-    <img src="dist/logo/header_img.png" alt="Header Image" class="header__img">
-    <h1 class="header__title">Osijek, Croatia</h1>
-    <p class="header__text">22 - 24 January 2019</p>
-  </header>
-
-  <main class="container" role="main">
-    <h1>News</h1>
-    <section class="section carousel">
-      <div class="owl-carousel owl-carousel--basic owl-theme">
-        <div class="carousel__item">
-          <img src="dist/img/carousel_deadline1.jpg" alt="News Deadline" class="carousel__img">
-          <div class="carousel__info">
-            <a href="registration.html"><h2>Deadline for Submitting Full-Text Manuscripts</h2></a>
-            <a href="registration.html"><h3>1st of December 2018</h3></a>
-          </div>
-        </div>
-
-        <div class="carousel__item">
-          <img src="dist/img/carousel_mail.jpg" alt="News Mail" class="carousel__img">
-          <div class="carousel__info">
-            <h2>Notifications have been<br />sent out!</h2>
-            <h3>Program will be available soon</h3>
-          </div>
-        </div>
-
-        <div class="carousel__item">
-          <img src="dist/img/carousel_register.jpg" alt="News Registration" class="carousel__img">
-          <div class="carousel__info">
-            <a href="registration.html"><h2>Register Now!</h2></a>
-            <a href="registration.html"><h3>Grab your early cat registration</h3></a>
-          </div>
-        </div>
-
-        <div class="carousel__item">
-          <img src="dist/img/carousel_sm1.jpg" alt="News Social Media" class="carousel__img">
-          <div class="carousel__info">
-            <h2>Follow Us on Social Media!</h2>
-
-            <div class="carousel__sm">
-              <a href="https://www.facebook.com/Bobcatsss/" target="_blank">
-                <img src="dist/icon/facebook.png" alt="News Social Media" class="carousel__icon"><span> @Bobcatsss</span>
-              </a>
-              <a href="https://www.instagram.com/bobcatsss2019/?hl=hr" target="_blank">
-                <img src="dist/icon/instagram.png" alt="News Social Media" class="carousel__icon"><span> @bobcatsss2019</span>
-              </a>
-              <a href="https://twitter.com/bobcatsss2019" target="_blank">
-                <img src="dist/icon/twitter.png" alt="News Social Media" class="carousel__icon"><span> @bobcatsss2019</span>
-              </a>
-            </div>
-          </div>
-        </div>
+  <main class="container about" role="main">
+    <h1>Sponsors</h1>
+    <section class="section">
+      <div class="section__item section__item--full sponsors">
+        <a href="http://www.emeraldgrouppublishing.com/" target="_blank" class="sponsors__item"><img src="dist/img/sponsors_e.jpg" class="sponsors__img" alt="Sponsors Emerald Publishing"></a>
+        <a href="https://qulto.eu/" target="_blank" class="sponsors__item"><img src="dist/img/sponsors_qulto.jpg" alt="Sponsors Qulto"></a>
+        <a href="https://www.redbull.com/" target="_blank" class="sponsors__item"><img src="dist/img/sponsors_redbull.png" class="sponsors__img" alt="Sponsors Red Bull"></a>
+        <a href="http://www.mlinar.hr/" target="_blank" class="sponsors__item"><img src="dist/img/sponsors_mlinar.jpg" class="sponsors__img" alt="Sponsors Mlinar"></a>
+        <a href="https://www.osjecki-taxi.hr/" target="_blank" class="sponsors__item"><img src="dist/img/sponsors_ostaxi.png" class="sponsors__img" alt="Sponsors Osječki Taxi"></a>
       </div>
     </section>
+  </main> 
 
-    <h1>Keynote speakers</h1>
-    <section class="section keynote">
-      <div class="keynote__item">
-        <img src="dist/img/keynote_micunovic.jpg" alt="Keynote Speaker Micunovic">
-        <h3>Milijana Mičunović</h3>
-        <p>Assistant Professor at Department of Information Sciences, Faculty of Humanities and Social Sciences at University of Osijek, Croatia</p>
-      </div>
-
-      <div class="keynote__item">
-        <img src="dist/img/keynote_huysmans.png" alt="Keynote Speaker Huysmans">
-        <h3>Frank Huysmans</h3>
-        <p>Professor of library science at the department of Media Studies, Faculty of Humanities, University of Amsterdam</p>
-      </div>
-
-      <div class="keynote__item">
-        <img src="dist/img/keynote_golub.jpg" alt="Keynote Speaker Golub">
-        <h3>Koraljka Golub</h3>
-        <p>Associate Professor, Head of the iInstitute, Digital Humanities Initiative Co-Leader, Department of Cultural Sciences Faculty of Arts and Humanities, Linnaeus University</p>
-      </div>
-    </section>
-
-    <h1 class="countdown__title">Countdown Until Bobcatsss Osijek, Croatia</h1>
-    <section class="section countdown">
-      <div class="countdown__wrap" role="timer">
-        <div class="countdown--days">
-          <span class="days" id="days"></span>
-          <div class="smalltext">days</div>
-        </div>
-        
-        <div class="countdown--hours">
-          <span class="hours" id="hours"></span>
-          <div class="smalltext">hours</div>
-        </div>
-        
-        <div class="countdown--minutes">
-          <span class="minutes" id="minutes"></span>
-          <div class="smalltext">minutes</div>
-        </div>
-
-        <div class="countdown--seconds">
-          <span class="seconds" id="seconds"></span>
-          <div class="smalltext">seconds</div>
-        </div>
-      </div>
-      
-      <img src="dist/icon/clock.png" alt="Countdown Hourglass Icon" class="countdown__icon">
-
-      <div>
-        <img src="dist/icon/map.png" alt="Countdown World Map" class="countdown__map">
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
+	<footer class="footer">
     <div class="footer__item">
       <h3>Our Partners</h3>
       <ul>
@@ -252,37 +162,15 @@
       BOBCATSSS 2019 &copy; 2018
     </div>
   </footer>
-  
-  <script>
-    // Set the date we're counting down to, PROMJENITI!
-    var countDownDate = new Date("Jan 28, 2019 09:00:00").getTime();
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
 
-    calculate();
-        setInterval(function() {
-        calculate();
-    }, 1000);
-
-    function calculate(){
-        now = new Date().getTime();
-        distance = countDownDate - now;
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;    
-    }
-  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="dist/js/burger_init.js"></script>
-  <script src="dist/js/owl_carousel_lib.js"></script>
-  <script src="dist/js/owl_carousel_init.js"></script>
-
+  <script src="dist/js/slider_init.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="dist/js/map_init.js"></script>
+	  
 </body>
 
 </html>
