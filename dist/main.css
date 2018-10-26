@@ -309,8 +309,8 @@ p {
     align-items: center;
     text-align: center; }
   .keynote img {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     object-fit: cover; }
   .keynote h3 {
@@ -768,6 +768,7 @@ p {
     display: none;
     width: 200px;
     text-align: center;
+    background-color: #FFFFFF;
     box-shadow: 0px 3px 10px 0px rgba(201, 201, 201, 0.5);
     position: absolute;
     top: 3.25rem;
