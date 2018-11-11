@@ -338,7 +338,9 @@ p {
     top: -4rem;
     right: -2rem; }
   .countdown__map {
-    width: 100%;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
     margin-top: 4rem; }
 
 .countdown__title {
@@ -603,6 +605,8 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; }
+  .organization__item--wrap:last-child {
+    justify-content: center; }
 .organization__item {
   width: 33%;
   text-align: center;
@@ -621,6 +625,8 @@ p {
   width: 100%;
   text-align: center;
   margin-bottom: 2rem; }
+  .organization__title:last-of-type {
+    margin-top: 2rem; }
 
 .sponsors {
   display: flex;
@@ -629,7 +635,7 @@ p {
   justify-content: center;
   margin-top: 2rem; }
   .sponsors__item {
-    width: 30%;
+    width: 22%;
     margin-left: 1rem;
     margin-right: 1rem; }
     .sponsors__item img {
@@ -646,9 +652,9 @@ p {
     width: 40%;
     margin-bottom: 3rem; }
     .sponsors__item:nth-child(2) img {
-      width: 75%; }
-  .sponsors__item:last-child img {
-    width: 30%; }
+      width: 70%; }
+  .sponsors__item:nth-child(5) img {
+    width: 40%; }
 
 .speakers__item {
   display: flex;
@@ -940,7 +946,9 @@ p {
     font-weight: 700;
     line-height: 1.2;
     padding-top: 1.25rem;
-    padding-bottom: 1.5rem; }
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
   .carousel h3 {
     font-size: 1.5rem;
     line-height: 1;
@@ -1214,5 +1222,3 @@ p {
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #869791; }
-
-/*# sourceMappingURL=main.css.map */

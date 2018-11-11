@@ -124,7 +124,9 @@
 	}
 
 	&__map {
-		width: 100%;
+		display: block;
+		width: 80%;
+		margin: 0 auto;
 		margin-top: $gutter * 2;
 	}
 }
