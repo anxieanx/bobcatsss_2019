@@ -636,6 +636,7 @@ p {
   margin-top: 2rem; }
   .sponsors__item {
     width: 22%;
+    margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem; }
     .sponsors__item img {
@@ -682,6 +683,49 @@ p {
 .speakers__text {
   width: 68%; }
 
+.program {
+  flex-direction: column; }
+  .program__head {
+    width: 100%;
+    background-color: #009688;
+    text-align: center;
+    margin-top: 4rem; }
+    .program__head:first-child {
+      margin-top: 2rem; }
+    .program__head h2 {
+      color: #FFFFFF;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      padding-left: 10%; }
+  .program__body {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 150, 136, 0.25);
+    text-align: center; }
+  .program__time {
+    width: 15%;
+    border-right: 1px solid rgba(0, 150, 136, 0.25);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+  .program__info {
+    width: 85%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .program__info--large {
+      display: flex;
+      justify-content: space-between; }
+    .program__info--small {
+      width: 30%; }
+  .program__highlight {
+    color: #009688; }
+  .program--poster {
+    max-width: 45rem;
+    margin: 0 auto; }
+
 @media screen and (max-width: 639px) {
   #mapid {
     margin-top: 2rem; }
@@ -726,7 +770,19 @@ p {
   .speakers__text {
     width: 100%; }
     .speakers__text h3 {
-      text-align: center; } }
+      text-align: center; }
+
+  .program__head h2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+  .program__time {
+    width: 25%; }
+  .program__info {
+    width: 75%; }
+    .program__info--large {
+      flex-direction: column; }
+    .program__info--small {
+      width: 100%; } }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
   #mapid {
     margin-top: 3rem;
@@ -746,7 +802,19 @@ p {
 
   .organization__item {
     padding-left: 1rem;
-    padding-right: 1rem; } }
+    padding-right: 1rem; }
+
+  .program__head h2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+  .program__time {
+    width: 25%; }
+  .program__info {
+    width: 75%; }
+    .program__info--large {
+      flex-direction: column; }
+    .program__info--small {
+      width: 100%; } }
 .nav {
   display: flex;
   justify-content: space-between;
