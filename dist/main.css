@@ -719,9 +719,13 @@ p {
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem; }
+    .program__info--wrap {
+      flex-wrap: wrap; }
     .program__info--large {
       display: flex;
       justify-content: space-between; }
+    .program__info--medium {
+      width: 50%; }
     .program__info--small {
       width: 30%; }
   .program__highlight {
