@@ -725,7 +725,7 @@ p {
       display: flex;
       justify-content: space-between; }
     .program__info--medium {
-      width: 50%; }
+      width: 48%; }
     .program__info--small {
       width: 30%; }
   .program__highlight {
